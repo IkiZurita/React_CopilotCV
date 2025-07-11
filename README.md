@@ -1,12 +1,43 @@
-# React + Vite
+# Portafolio Personal con React + GitHub Copilot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es un portafolio personal desarrollado con React, Vite y Material UI, siguiendo buenas prácticas de desarrollo asistidas por Inteligencia Artificial.
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Vite
+- Material UI
+- GitHub Copilot (IA asistente)
+- Jest + React Testing Library
 
-## Expanding the ESLint configuration
+## Características
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Información personal y profesional
+- Fotografía y número de contacto
+- Habilidades blandas y técnicas
+- Proyectos destacados
+- Lenguajes de programación
+
+## Pruebas unitarias
+
+Se implementaron pruebas automáticas para validar:
+
+- Presencia de fotografía
+- Nombre completo
+- Número de teléfono
+- Al menos 5 habilidades
+- Al menos 3 proyectos
+- Al menos 1 lenguaje de programación
+
+Las pruebas se encuentran en:  
+`src/App.test.jsx`
+
+## Experiencia con GitHub Copilot
+
+Durante el desarrollo, GitHub Copilot fue una herramienta clave para, generar estructuras de pruebas rápidamente, sugerir funciones de test automatizadas y agilizar la escritura de componentes en React.
+
+La IA ayudó especialmente en la escritura de pruebas Jest con estructuras predefinidas y aserciones útiles, reduciendo tiempos de desarrollo y errores comunes.
+
+## 🔗 Enlace al repositorio
+
+[https://github.com/IkiZurita/React_CopilotCV](https://github.com/IkiZurita/React_CopilotCV)

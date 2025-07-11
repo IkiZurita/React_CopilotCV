@@ -10,6 +10,7 @@ export default function Header() {
       />
       <Typography variant="h4" mt={2}>Íkiam Zurita</Typography>
       <Typography variant="subtitle1">Docente universitario, desarrollador de videojuegos y VR</Typography>
+      <Typography variant="body1" mt={1}>Teléfono: 0984698264</Typography> {/* ✅ Número agregado */}
     </Box>
   );
 }
