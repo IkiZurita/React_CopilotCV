@@ -1,0 +1,31 @@
+name: CI + Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main] # usa la rama principal que tengas
+  workflow_dispatch: # (opcional) permite lanzarlo a mano
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-test-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4 # 1. Clona el repo
+      - uses: actions/setup-node@v4 # 2. Node + cache
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - run: npm ci # 3. Instala dependencias
+      - run: npm test # 4. Ejecuta pruebas
+      - run: npm run build # 5. Compila a dist/
+
+      - uses: actions/upload-pages-artifact@v2 # 6. Sube /dist
+        with:
+          path: ./dist
+
+      - uses: actions/deploy-pages@v2 # 7. Publica en GitHub Pages
