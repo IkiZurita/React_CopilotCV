@@ -38,6 +38,17 @@ Durante el desarrollo, GitHub Copilot fue una herramienta clave para, generar es
 
 La IA ayudó especialmente en la escritura de pruebas Jest con estructuras predefinidas y aserciones útiles, reduciendo tiempos de desarrollo y errores comunes.
 
+## Automatización CI/CD
+
+El flujo `.github/workflows/deploy.yml`:
+
+1. Instala dependencias (`npm ci`)
+2. Ejecuta pruebas unitarias (Jest + React Testing Library)
+3. Compila el sitio con Vite
+4. Publica automáticamente en GitHub Pages
+
+Sin ramas `gh-pages` manuales — usa `actions/deploy-pages`, que aprovecha el `GITHUB_TOKEN` interno.
+
 ## 🔗 Enlace al repositorio
 
 [https://github.com/IkiZurita/React_CopilotCV](https://github.com/IkiZurita/React_CopilotCV)
